@@ -1,0 +1,1 @@
+/home/gz/downloads/aur/dwm/config.h
