@@ -43,5 +43,6 @@ like this in your .xinitrc:
 - vanitygaps
 
 # Notes on patches
+- use `git apply --reject --whitespace=fix your_patch.diff` to apply patches with git;
 - vanitygaps is able to work with more than the set of the default layouts; so TODO is to patch `config.def.h` accordingly if new layouts are added;
 - alpha requires composit window manager to work (eg picom); on VM it makes everything sluggish, should try enabling it on an actual machine;
