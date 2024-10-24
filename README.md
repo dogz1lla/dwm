@@ -41,6 +41,8 @@ like this in your .xinitrc:
 - systemcmd
 - xresources
 - vanitygaps
+- alpha
+- status2d
 
 # Notes on patches
 - use `git apply --reject --whitespace=fix your_patch.diff` to apply patches with git;
