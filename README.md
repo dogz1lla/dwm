@@ -41,7 +41,7 @@ like this in your .xinitrc:
 - systemcmd
 - xresources
 - vanitygaps
-- alpha
+- ~~alpha~~ (NOTE: not using in the re-apply of patches)
 - status2d
 
 # Notes on patches
