@@ -10,8 +10,8 @@ static unsigned int borderpx  = 1;        /* border pixel of windows */
 static unsigned int snap      = 32;       /* snap pixel */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static char font[]            = "monospace:size=10";
-static char dmenufont[]       = "monospace:size=10";
+static char font[]            = "JetBrains Mono Nerd Font:size=10";
+static char dmenufont[]       = "JetBrains Mono Nerd Font:size=10";
 static const char *fonts[]          = { font };
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
@@ -26,7 +26,7 @@ static char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = { "\u03b1", "\u03b2", "\u03b3", "\u03b4" };
+static const char *tags[] = { "\uf120", "\ueb01", "\uf0e0", "\ue217" };
 
 static const Rule rules[] = {
 	/* xprop(1):
