@@ -83,11 +83,11 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *volume_mute[]  = { "amixer", "-q", "set", "Master", "toggle", NULL };
-static const char *volume_inc[]   = { "amixer", "-q", "set", "Master", "2%+",    NULL };
-static const char *volume_dec[]   = { "amixer", "-q", "set", "Master", "2%-",    NULL };
-static const char *volume_dinc[]  = { "amixer", "-q", "set", "Master", "5%+",    NULL };
-static const char *volume_ddec[]  = { "amixer", "-q", "set", "Master", "5%-",    NULL };
+static const char *volume_mute[]  = { "volume.sh", "mute", NULL };
+static const char *volume_inc[]   = { "volume.sh", "up",   "2",  NULL };
+static const char *volume_dec[]   = { "volume.sh", "down", "2",  NULL };
+static const char *volume_dinc[]  = { "volume.sh", "up",   "5",  NULL };
+static const char *volume_ddec[]  = { "volume.sh", "down", "5",  NULL };
 
 /*
  * Xresources preferences to load at startup
