@@ -91,6 +91,10 @@ static const char *volume_ddec[]  = { "volume.sh", "down", "5",  NULL };
 static const char *brightness_inc[]  = { "brightness.sh", "up",   "10",  NULL };
 static const char *brightness_dec[]  = { "brightness.sh", "down", "10",  NULL };
 static const char *kbd_backlight[]   = { "kbdbacklight.sh", NULL };
+static const char *screenshot_select[]        = { "screenshot.sh",           NULL };
+static const char *screenshot_screen[]        = { "screenshot.sh", "full",   NULL };
+static const char *screenshot_window[]        = { "screenshot.sh", "window", NULL };
+static const char *screenshot_colorpicker[]   = { "screenshot.sh", "color",  NULL };
 
 /*
  * Xresources preferences to load at startup
@@ -170,9 +174,15 @@ static const Key keys[] = {
 	{ MODKEY,                       XF86XK_AudioLowerVolume, spawn,   {.v = volume_dec } },
 	{ MODKEY|ShiftMask,             XF86XK_AudioRaiseVolume, spawn,   {.v = volume_dinc } },
 	{ MODKEY|ShiftMask,             XF86XK_AudioLowerVolume, spawn,   {.v = volume_ddec } },
+    // brightness (screen/kbd)
 	{ MODKEY,                       XF86XK_MonBrightnessUp,   spawn,  {.v = brightness_inc } },
 	{ MODKEY,                       XF86XK_MonBrightnessDown, spawn,  {.v = brightness_dec } },
 	{ MODKEY|ShiftMask,             XK_b,                     spawn,  {.v = kbd_backlight } },
+    // screenshotting
+	{ MODKEY|Mod4Mask,              XK_a,                     spawn,  {.v = screenshot_screen } },
+	{ MODKEY|Mod4Mask,              XK_w,                     spawn,  {.v = screenshot_window } },
+	{ MODKEY|Mod4Mask,              XK_s,                     spawn,  {.v = screenshot_select } },
+	{ MODKEY|Mod4Mask,              XK_c,                     spawn,  {.v = screenshot_colorpicker } },
 };
 
 /* button definitions */
