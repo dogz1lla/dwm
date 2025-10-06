@@ -88,6 +88,9 @@ static const char *volume_inc[]   = { "volume.sh", "up",   "2",  NULL };
 static const char *volume_dec[]   = { "volume.sh", "down", "2",  NULL };
 static const char *volume_dinc[]  = { "volume.sh", "up",   "5",  NULL };
 static const char *volume_ddec[]  = { "volume.sh", "down", "5",  NULL };
+static const char *brightness_inc[]  = { "brightness.sh", "up",   "10",  NULL };
+static const char *brightness_dec[]  = { "brightness.sh", "down", "10",  NULL };
+static const char *kbd_backlight[]   = { "kbdbacklight.sh", NULL };
 
 /*
  * Xresources preferences to load at startup
@@ -167,6 +170,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XF86XK_AudioLowerVolume, spawn,   {.v = volume_dec } },
 	{ MODKEY|ShiftMask,             XF86XK_AudioRaiseVolume, spawn,   {.v = volume_dinc } },
 	{ MODKEY|ShiftMask,             XF86XK_AudioLowerVolume, spawn,   {.v = volume_ddec } },
+	{ MODKEY,                       XF86XK_MonBrightnessUp,   spawn,  {.v = brightness_inc } },
+	{ MODKEY,                       XF86XK_MonBrightnessDown, spawn,  {.v = brightness_dec } },
+	{ MODKEY|ShiftMask,             XK_b,                     spawn,  {.v = kbd_backlight } },
 };
 
 /* button definitions */
