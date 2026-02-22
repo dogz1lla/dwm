@@ -11,7 +11,7 @@ static unsigned int snap      = 32;       /* snap pixel */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static char font[]            = "JetBrains Mono Nerd Font:size=10";
-static char dmenufont[]       = "JetBrains Mono Nerd Font:size=10";
+static char dmenufont[]       = "JetBrains Mono Nerd Font:size=30";
 static const char *fonts[]          = { font };
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
